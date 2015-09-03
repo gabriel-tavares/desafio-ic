@@ -1,4 +1,4 @@
-#  Desafio Intercase
+#  Loaja virutal (Lista de produtos e Perfil do usuário)
 ## Gabriel Tavares
 
 ### Tecnologia
