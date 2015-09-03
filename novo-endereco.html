@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+        <title> Desafio - Intercase - Novo Endereço</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- MENU  -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Desafio - InterCase</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Categoria 1</a></li>
+                        <li><a href="#">Categoria 2</a></li>
+                        <li><a href="#">Categoria 3</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> Gabriel Tavares <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html">Meu Perfil</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="dados-pessoais.html">Dados pessoais</a></li>
+                                <li><a href="lista-enderecos.html">Endereços</a></li>
+                                <li><a href="lista-produtos.html">Lista de compras</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="sair"><a class="btn btn-danger btn-sm" href="#"><i class="fa fa-times-circle-o"></i> Sair</a></li></ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container fixed-top">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="breadcrumb">
+                            <li> <a href="#">Página Principal</a> </li>
+                            <li> <a href="#">Perfil do Cliente</a> </li>
+                            <li> <a href="#">Endereços</a> </li>
+                            <li class="active">Novo Endereço</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-7">
+                        <h1 class="titulo-secao"><i class="fa fa-edit"></i> Novo Endereço</h1>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-5 rightSidebar">
+                        <h4 class="caps"><a href="javascript:history.go(-1)"><i class="fa fa-chevron-left"></i> Voltar</a></h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="sub-titulo">Para adicionar um novo endereço, por favor preencha o formulário abaixo.</h2>
+                                <p class="obrigatorio"><sup>*</sup> Campos obrigatórios</p>
+                            </div>
+                            <form data-toggle="validator" role="form">
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="form-group has-feedback">
+                                        <label for="titulo">Por favor, atribuir um título<sup>*</sup></label>
+                                        <input required type="text" name="addressAlias" class="form-control"  maxlength="30" placeholder="Título do endereço">
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <label for="InputNome">Nome <sup>*</sup> </label>
+                                        <input required type="text" class="form-control" id="nome" name="nome"  maxlength="15" placeholder="Nome">
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <label for="InputSobrenome">Sobrenome <sup>*</sup> </label>
+                                        <input required type="text" class="form-control" id="sobrenome"  maxlength="15" placeholder="Sobrenome">
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputCelular">Celular </label>
+                                        <input type="tel" name="InputMobile" class="form-control" id="celular" data-mask="(99) 99999-9999" placeholder="(XX) 00000-0000">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputTelefone">Telefone </label>
+                                        <input type="tel" name="InputMobile" class="form-control" id="telefone" data-mask="(99) 9999-9999" placeholder="(XX) 0000-0000">
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <label for="InputCep">CEP <sup>*</sup> </label>
+                                        <input required type="text" pattern= "\d{5}-?\d{3}" data-mask="99999-999" maxlength="9" class="form-control" id="bairro" placeholder="00000-000">
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="form-group has-feedback">
+                                        <label for="InputEndereco">Endereço <sup>*</sup> </label>
+                                        <input required type="text" class="form-control" id="endereco" placeholder="Endereço">
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <label for="InputComplemento">Complemento </label>
+                                        <input required type="text" class="form-control" id="complemento" placeholder="Complemento">
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <label for="InputBairro">Bairro <sup>*</sup> </label>
+                                        <input required type="text" class="form-control" id="bairro" placeholder="Bairro">
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <label for="InputCidade">Cidade <sup>*</sup> </label>
+                                        <input required type="text" class="form-control" id="bairro" placeholder="Cidade">
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <label for="InputEstado">Estado <sup>*</sup> </label>
+                                        <select  required="" name="estado"  class="form-control">
+                                            <option value="">Selecione o Estado</option>
+                                            <option value="ac">Acre</option>
+                                            <option value="al">Alagoas</option>
+                                            <option value="am">Amazonas</option>
+                                            <option value="ap">Amapá</option>
+                                            <option value="ba">Bahia</option>
+                                            <option value="ce">Ceará</option>
+                                            <option value="df">Distrito Federal</option>
+                                            <option value="es">Espírito Santo</option>
+                                            <option value="go">Goiás</option>
+                                            <option value="ma">Maranhão</option>
+                                            <option value="mt">Mato Grosso</option>
+                                            <option value="ms">Mato Grosso do Sul</option>
+                                            <option value="mg">Minas Gerais</option>
+                                            <option value="pa">Pará</option>
+                                            <option value="pb">Paraíba</option>
+                                            <option value="pr">Paraná</option>
+                                            <option value="pe">Pernambuco</option>
+                                            <option value="pi">Piauí</option>
+                                            <option value="rj">Rio de Janeiro</option>
+                                            <option value="rn">Rio Grande do Norte</option>
+                                            <option value="ro">Rondônia</option>
+                                            <option value="rs">Rio Grande do Sul</option>
+                                            <option value="rr">Roraima</option>
+                                            <option value="sc">Santa Catarina</option>
+                                            <option value="se">Sergipe</option>
+                                            <option value="sp">São Paulo</option>
+                                            <option value="to">Tocantins</option>
+                                        </select>
+                                        <span class="glyphicon form-control-feedback ajuste-feedback" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-success pull-right salvar-endereco"><i class="fa fa-map-marker"></i> Salvar endereço </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="col-lg-12 col-md-12 col-xs-12 margin-footer">
+                                <div class="box-footer">
+                                    <div class="pull-left">
+                                        <a href="javascript:history.go(-1)" class="btn btn-default"> <i class="fa fa-arrow-left"></i> &nbsp; Voltar </a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="#" class="btn btn-default"> <i class="fa fa-home"></i> &nbsp; Página Principal </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+                                <h3> Suporte </h3>
+                                <ul>
+                                    <li class="suporte">
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, expedita!</p>
+                                        <h4> <a class="inline" href="callto:2112341234"> <strong> <i class="fa fa-phone"> </i> 21 1234-1234</strong> </a> </h4>
+                                        <h4> <a class="inline" href="mailto:"> <i class="fa fa-envelope-o"> </i> contato@email.com.br</a> </h4>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                                <h3> Institucional </h3>
+                                <ul>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Garantia Estendida </a> </li>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Relações com investidores </a> </li>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Trabalhe conosco </a> </li>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Política de privacidade </a> </li>
+                                </ul>
+                            </div>
+                            <div style="clear:both" class="hide visible-xs"></div>
+                            <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                                <h3> Dúvidas </h3>
+                                <ul>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Atendimento </a> </li>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Trocas e devoluções </a> </li>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Direito de arrependimento </a> </li>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Principais fornecedores </a> </li>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Politica de entrega </a> </li>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Disponibilidade de produto </a> </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                                <h3> Minha Conta </h3>
+                                <ul>
+                                    <li> <a href="index.html"> Meu Perfil </a> </li>
+                                    <li> <a href="dados-pessoais.html"> Dados pessoais </a> </li>
+                                    <li> <a href="lista-enderecos.html"> Endereço </a> </li>
+                                    <li> <a href="lista-produtos.html"> Lista de compras </a> </li>
+                                </ul>
+                            </div>
+                            <div style="clear:both" class="hide visible-xs"></div>
+                            <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                                <h3> Newsletter </h3>
+                                <ul>
+                                    <li>
+                                        <div class="input-append newsletter text-center">
+                                            <input type="text" class="w100 text-center" placeholder="Email ">
+                                            <button class="btn btn-success bg-gray" type="button"> Inscreva-se <i class="fa fa-long-arrow-right"> </i> </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="social">
+                                    <li> <a href="http://facebook.com"> <i class=" fa fa-facebook"> &nbsp; </i> </a> </li>
+                                    <li> <a href="http://twitter.com"> <i class="fa fa-twitter"> &nbsp; </i> </a> </li>
+                                    <li> <a href="https://plus.google.com"> <i class="fa fa-google-plus"> &nbsp; </i> </a> </li>
+                                    <li> <a href="https://br.pinterest.com/"> <i class="fa fa-pinterest"> &nbsp; </i> </a> </li>
+                                    <li> <a href="http://youtube.com"> <i class="fa fa-youtube"> &nbsp; </i> </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <p class="pull-left">
+                        © DESAFIO - INTERCASE - 2015. Todos os direitos reservados.
+                        </p>
+                        <div class="pull-right metodo-pagamento">
+                            <img height="30" class="pull-right" src="images/master_card.png" alt="img">
+                            <img height="30" class="pull-right" src="images/visa_card.png" alt="img">
+                            <img height="30" class="pull-right" src="images/paypal.png" alt="img">
+                            <img height="30" class="pull-right" src="images/american_express_card.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Bootstrap core JavaScript
+            ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/validator.min.js"></script>
+            <script src="js/jquery.mask.min.js"></script>
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="js/ie10-viewport-bug-workaround.js"></script>
+        </body>
+    </html>

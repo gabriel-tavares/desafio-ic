@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+        <title> Desafio - Intercase - Lista de Endereços</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- MENU  -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Desafio - InterCase</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Categoria 1</a></li>
+                        <li><a href="#">Categoria 2</a></li>
+                        <li><a href="#">Categoria 3</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> Gabriel Tavares <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html">Meu Perfil</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="dados-pessoais.html">Dados pessoais</a></li>
+                                <li><a href="lista-enderecos.html">Endereços</a></li>
+                                <li><a href="lista-produtos.html">Lista de compras</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="sair"><a class="btn btn-danger btn-sm" href="#"><i class="fa fa-times-circle-o"></i> Sair</a></li></ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container fixed-top">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="breadcrumb">
+                            <li> <a href="#">Página Principal</a> </li>
+                            <li> <a href="#">Perfil do Cliente</a> </li>
+                            <li class="active">Endereços</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-7">
+                        <h1 class="titulo-secao"><i class="fa fa-map-marker"></i> Endereços</h1>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-5 rightSidebar">
+                        <h4 class="caps"><a href="javascript:history.go(-1)"><i class="fa fa-chevron-left"></i> Voltar</a></h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-7">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque veritatis accusamus dignissimos provident ipsum, debitis esse in maxime quisquam eligendi reprehenderit ab, suscipit atque ducimus ex fugiat. Provident, iste, vero!</p>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="sub-titulo"> Seus endereços</h2>
+                                <p class="pull-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, porro!</p>
+                                <a class="btn btn-success pull-right novo-endereco" href="novo-endereco.html"><i class="fa fa-plus-circle"></i> Novo Endereço </a>
+                            </div>
+                            <div class="w100 clearfix">
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title"><strong>Endereço Residencial</strong></h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li> <span class="nome"> <strong>Gabriel Tavares</strong></span></li>
+                                                <li> <span> <strong>Celular</strong> : 21 3252-0543 </span></li>
+                                                <li> <span> <strong>Telefone</strong> : ---------- </span></li>
+                                                <li> <span class="endereco-linha4"> CEP: 24342-795 </span></li>
+                                                <li> <span class="endereco-linha1"> Estrada da Boiúna, 330 </span></li>
+                                                <li> <span class="endereco-linha2"> Lote B – Apt 101 </span></li>
+                                                <li> <span class="endereco-linha3"> Taquara - Rio de Janeiro/RJ </span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="panel-footer panel-footer-address"> <a href="#" class="btn btn-sm btn-success"> <i class="fa fa-edit"> </i> Edit </a> <a class="btn btn-sm btn-danger"> <i class="fa fa-minus-circle"></i> Delete </a> </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title"><strong>Endereço Residencial 2</strong></h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li> <span class="nome"> <strong>Gabriel Tavares</strong></span></li>
+                                                <li> <span> <strong>Celular</strong> : 21 3252-0543 </span></li>
+                                                <li> <span> <strong>Telefone</strong> : 21 99288-8285 </span></li>
+                                                <li> <span class="endereco-linha4"> CEP: 24342-795 </span></li>
+                                                <li> <span class="endereco-linha1"> Rua Francisco Nascimento, 483 </span></li>
+                                                <li> <span class="endereco-linha2"> Antiga rua 26 </span></li>
+                                                <li> <span class="endereco-linha3"> Itaipu - Niterói/RJ </span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="panel-footer panel-footer-address"> <a href="#" class="btn btn-sm btn-success"> <i class="fa fa-edit"> </i> Edit </a> <a class="btn btn-sm btn-danger"> <i class="fa fa-minus-circle"></i> Delete </a> </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title"><strong>Endereço Comercial</strong></h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li> <span class="nome"> <strong>Gabriel Tavares</strong></span></li>
+                                                <li> <span> <strong>Celular</strong> : 21 3252-0543 </span></li>
+                                                <li> <span> <strong>Telefone</strong> : 21 99288-8285 </span></li>
+                                                <li> <span class="endereco-linha4"> CEP: 24342-795 </span></li>
+                                                <li> <span class="endereco-linha1"> Rua Francisco Nascimento, 483 </span></li>
+                                                <li> <span class="endereco-linha2"> Antiga rua 26 </span></li>
+                                                <li> <span class="endereco-linha3"> Itaipu - Niterói/RJ </span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="panel-footer panel-footer-address"> <a href="#" class="btn btn-sm btn-success"> <i class="fa fa-edit"> </i> Edit </a> <a class="btn btn-sm btn-danger"> <i class="fa fa-minus-circle"></i> Delete </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-xs-12 margin-footer">
+                                <div class="box-footer">
+                                    <div class="pull-left">
+                                        <a href="index.html" class="btn btn-default"> <i class="fa fa-arrow-left"></i> &nbsp; Voltar </a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="#" class="btn btn-default"> <i class="fa fa-home"></i> &nbsp; Página Principal </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+                                <h3> Suporte </h3>
+                                <ul>
+                                    <li class="suporte">
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, expedita!</p>
+                                        <h4> <a class="inline" href="callto:2112341234"> <strong> <i class="fa fa-phone"> </i> 21 1234-1234</strong> </a> </h4>
+                                        <h4> <a class="inline" href="mailto:"> <i class="fa fa-envelope-o"> </i> contato@email.com.br</a> </h4>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                                <h3> Institucional </h3>
+                                <ul>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Garantia Estendida </a> </li>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Relações com investidores </a> </li>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Trabalhe conosco </a> </li>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Política de privacidade </a> </li>
+                                </ul>
+                            </div>
+                            <div style="clear:both" class="hide visible-xs"></div>
+                            <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                                <h3> Dúvidas </h3>
+                                <ul>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Atendimento </a> </li>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Trocas e devoluções </a> </li>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Direito de arrependimento </a> </li>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Principais fornecedores </a> </li>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Politica de entrega </a> </li>
+                                    <li> <a href="#"> <i class="fa fa-caret-right"></i> Disponibilidade de produto </a> </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                                <h3> Minha Conta </h3>
+                                <ul>
+                                    <li> <a href="index.html"> Meu Perfil </a> </li>
+                                    <li> <a href="dados-pessoais.html"> Dados pessoais </a> </li>
+                                    <li> <a href="lista-enderecos.html"> Endereço </a> </li>
+                                    <li> <a href="lista-produtos.html"> Lista de compras </a> </li>
+                                </ul>
+                            </div>
+                            <div style="clear:both" class="hide visible-xs"></div>
+                            <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                                <h3> Newsletter </h3>
+                                <ul>
+                                    <li>
+                                        <div class="input-append newsletter text-center">
+                                            <input type="text" class="w100 text-center" placeholder="Email ">
+                                            <button class="btn btn-success bg-gray" type="button"> Inscreva-se <i class="fa fa-long-arrow-right"> </i> </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="social">
+                                    <li> <a href="http://facebook.com"> <i class=" fa fa-facebook"> &nbsp; </i> </a> </li>
+                                    <li> <a href="http://twitter.com"> <i class="fa fa-twitter"> &nbsp; </i> </a> </li>
+                                    <li> <a href="https://plus.google.com"> <i class="fa fa-google-plus"> &nbsp; </i> </a> </li>
+                                    <li> <a href="https://br.pinterest.com/"> <i class="fa fa-pinterest"> &nbsp; </i> </a> </li>
+                                    <li> <a href="http://youtube.com"> <i class="fa fa-youtube"> &nbsp; </i> </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <p class="pull-left">
+                        © DESAFIO - INTERCASE - 2015. Todos os direitos reservados.
+                        </p>
+                        <div class="pull-right metodo-pagamento">
+                            <img height="30" class="pull-right" src="images/master_card.png" alt="img">
+                            <img height="30" class="pull-right" src="images/visa_card.png" alt="img">
+                            <img height="30" class="pull-right" src="images/paypal.png" alt="img">
+                            <img height="30" class="pull-right" src="images/american_express_card.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Bootstrap core JavaScript
+            ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="js/ie10-viewport-bug-workaround.js"></script>
+        </body>
+    </html>
