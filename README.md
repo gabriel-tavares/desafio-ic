@@ -1,4 +1,4 @@
-##  Loaja virtoal (Lista de produtos e Perfil do usuário)
+##  Loaja virtual (Lista de produtos e Perfil do usuário)
 ### Gabriel Tavares
 
 ### Tecnologia
